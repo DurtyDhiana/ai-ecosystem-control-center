@@ -4,7 +4,7 @@
 
 ### Working Badges (Ready to Use)
 ```markdown
-![Build](https://img.shields.io/github/actions/workflow/status/user/ai-ecosystem-control-center/ci.yml?branch=main&label=build)
+![Build](https://img.shields.io/github/actions/workflow/status/DurtyDhiana/ai-ecosystem-control-center/ci.yml?branch=main&label=build)
 ![Uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
 ![Cost](https://img.shields.io/badge/monthly%20cost-$0-green)
 ![Python](https://img.shields.io/badge/python-3.12+-blue)
@@ -15,8 +15,8 @@
 ## How to Update Badges
 
 ### 1. GitHub Actions Build Badge
-- **Current**: `![Build](https://img.shields.io/github/actions/workflow/status/user/ai-ecosystem-control-center/ci.yml?branch=main&label=build)`
-- **To Update**: Replace `user/ai-ecosystem-control-center` with your actual GitHub username/repo
+- **Current**: `![Build](https://img.shields.io/github/actions/workflow/status/DurtyDhiana/ai-ecosystem-control-center/ci.yml?branch=main&label=build)`
+- **To Update**: Replace `DurtyDhiana/ai-ecosystem-control-center` with your actual GitHub username/repo
 - **Example**: `![Build](https://img.shields.io/github/actions/workflow/status/johndoe/ai-ecosystem-control-center/ci.yml?branch=main&label=build)`
 
 ### 2. UptimeRobot Badge (Optional)

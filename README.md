@@ -1,7 +1,7 @@
 # 🤖 AI Ecosystem Control Center
 
 <!-- =====================  REAL BADGES  ===================== -->
-![Build](https://img.shields.io/github/actions/workflow/status/user/ai-ecosystem-control-center/ci.yml?branch=main&label=build)
+![Build](https://img.shields.io/github/actions/workflow/status/DurtyDhiana/ai-ecosystem-control-center/ci.yml?branch=main&label=build)
 ![Uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
 ![Cost](https://img.shields.io/badge/monthly%20cost-$0-green)
 ![Python](https://img.shields.io/badge/python-3.12+-blue)
