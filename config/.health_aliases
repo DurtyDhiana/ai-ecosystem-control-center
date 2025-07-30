@@ -1,0 +1,13 @@
+# Health Intelligence CLI Aliases
+alias health="python3 /Users/MAC/health_cli.py"
+alias health-score="python3 /Users/MAC/health_cli.py score"
+alias health-insights="python3 /Users/MAC/health_cli.py insights"
+alias health-alerts="python3 /Users/MAC/health_cli.py alerts"
+alias health-dashboard="python3 /Users/MAC/health_cli.py dashboard"
+alias health-reports="python3 /Users/MAC/health_cli.py reports"
+alias health-goals="python3 /Users/MAC/health_cli.py goals"
+
+# Quick health checks
+alias health-check="python3 /Users/MAC/health_cli.py score && python3 /Users/MAC/health_cli.py insights --limit 2"
+alias health-urgent="python3 /Users/MAC/health_cli.py insights --priority high"
+alias health-positive="python3 /Users/MAC/health_cli.py insights --priority positive"

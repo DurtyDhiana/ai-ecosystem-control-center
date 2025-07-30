@@ -1,0 +1,11 @@
+# Enhanced Email Intelligence CLI Aliases
+alias email="python3 /Users/MAC/email_cli.py"
+alias email-stats="python3 /Users/MAC/email_cli.py stats"
+alias email-urgent="python3 /Users/MAC/email_cli.py ls --urgent"
+alias email-drafts="python3 /Users/MAC/email_cli.py drafts"
+alias email-dashboard="python3 /Users/MAC/email_cli.py dashboard"
+
+# Quick email actions
+alias email-work="python3 /Users/MAC/email_cli.py ls --category work"
+alias email-personal="python3 /Users/MAC/email_cli.py ls --category personal"
+alias email-spam="python3 /Users/MAC/email_cli.py ls --category spam"

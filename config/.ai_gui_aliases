@@ -1,0 +1,20 @@
+# AI Ecosystem GUI Aliases
+
+# Main GUI Application
+alias ai-gui="cd /Users/MAC && python3 ai_ecosystem_app.py"
+alias ai-control="cd /Users/MAC && python3 ai_ecosystem_app.py"
+alias ai-center="cd /Users/MAC && python3 ai_ecosystem_app.py"
+
+# Menu Bar App
+alias ai-menubar="cd /Users/MAC && python3 ai_menubar_app.py"
+alias ai-menu="cd /Users/MAC && python3 ai_menubar_app.py"
+
+# Quick launchers
+alias ai-launch="/Users/MAC/launch_ai_gui.sh"
+alias ai-menu-launch="/Users/MAC/launch_ai_menubar.sh"
+
+# App bundle launcher
+alias ai-app="open '/Users/MAC/Applications/AI_Ecosystem_Control_Center.app'"
+
+# Quick system actions via GUI
+alias ai-run-all="cd /Users/MAC && python3 -c 'import subprocess; subprocess.run([\"python3\", \"smart_file_organizer.py\"]); subprocess.run([\"python3\", \"code_quality_monitor.py\"]); print(\"All systems refreshed!\")'"

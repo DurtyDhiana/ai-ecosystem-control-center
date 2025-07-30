@@ -1,0 +1,16 @@
+# AI Ecosystem Control Center Dependencies
+
+# Core dependencies
+beautifulsoup4>=4.13.4
+pyyaml>=6.0.2
+click>=8.2.1
+requests>=2.32.4
+
+# GUI dependencies
+rumps>=0.4.0
+
+# Optional dependencies for enhanced features
+# Uncomment if needed:
+# numpy>=1.24.0
+# pandas>=2.0.0
+# matplotlib>=3.7.0

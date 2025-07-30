@@ -1,0 +1,45 @@
+# .github/workflows/ci.yml
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: make test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile src/*.py gui/*.py cli/*.py
+
+  architecture-drift-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check architecture document freshness
+        run: |
+          # Check if ARCHITECTURE.md lastUpdated is within 30 days
+          LAST_UPDATED=$(grep "lastUpdated:" docs/ARCHITECTURE.md | cut -d'"' -f2)
+          DAYS_OLD=$(( ($(date +%s) - $(date -d "$LAST_UPDATED" +%s)) / 86400 ))
+          if [ $DAYS_OLD -gt 30 ]; then
+            echo "❌ ARCHITECTURE.md lastUpdated is $DAYS_OLD days old (>30 days)"
+            echo "Please update the lastUpdated field in the YAML front-matter"
+            exit 1
+          else
+            echo "✅ ARCHITECTURE.md is current ($DAYS_OLD days old)"
+          fi

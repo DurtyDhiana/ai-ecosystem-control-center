@@ -1,0 +1,28 @@
+# AI Ecosystem GUI Aliases - Fixed Version
+
+# Main GUI Application (Fixed)
+alias ai-gui="cd /Users/MAC && python3 ai_ecosystem_app_fixed.py"
+alias ai-control="cd /Users/MAC && python3 ai_ecosystem_app_fixed.py"
+alias ai-center="cd /Users/MAC && python3 ai_ecosystem_app_fixed.py"
+
+# Menu Bar App
+alias ai-menubar="cd /Users/MAC && python3 ai_menubar_app.py"
+alias ai-menu="cd /Users/MAC && python3 ai_menubar_app.py"
+
+# Quick launchers
+alias ai-launch="cd /Users/MAC && python3 ai_ecosystem_app_fixed.py"
+
+# App bundle launcher
+alias ai-app="open '/Users/MAC/Applications/AI_Ecosystem_Control_Center.app'"
+
+# Quick system runners
+alias ai-run-file="cd /Users/MAC && python3 smart_file_organizer.py"
+alias ai-run-code="cd /Users/MAC && python3 code_quality_monitor.py"
+alias ai-run-email="cd /Users/MAC && python3 -c 'import sys; sys.path.append(\"/Users/MAC\"); exec(open(\"/Users/MAC/email_intelligence_complete.py\").read())'"
+alias ai-run-health="cd /Users/MAC && python3 -c 'import sys; sys.path.append(\"/Users/MAC\"); exec(open(\"/Users/MAC/health_data_interpreter.py\").read())'"
+
+# Dashboard shortcuts
+alias ai-dash-code="open ~/code_quality_dashboard.html"
+alias ai-dash-email="open ~/email_dashboard.html"
+alias ai-dash-health="open ~/health_dashboard.html"
+alias ai-dash-all="open ~/code_quality_dashboard.html && open ~/email_dashboard.html && open ~/health_dashboard.html"
